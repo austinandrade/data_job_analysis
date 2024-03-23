@@ -19,4 +19,4 @@ WHERE job_title_short = 'Data Engineer'
     AND job_work_from_home = True
     AND salary_year_avg IS NOT NULL
 ORDER BY salary_year_avg DESC
-LIMIT 10
+LIMIT 100
