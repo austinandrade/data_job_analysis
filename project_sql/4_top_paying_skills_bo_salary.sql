@@ -19,7 +19,7 @@ ORDER BY avg_salary DESC
 LIMIT 25
 
 /*
-  Here are insights for the top 25 most compensated skills based on average data engineer salaries including those skills:
+  Here are insights for the top 25 most compensated skills based on average data engineer roles including those skills:
   
   There is a high demand for specialized skills. 
   The list showcases a high demand for Data Engineers with expertise in diverse programming languages (like Assembly, Rust, and Julia), emerging technologies (such as Solidity and GraphQL), and niche areas.
