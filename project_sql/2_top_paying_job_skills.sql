@@ -29,18 +29,8 @@ LIMIT 10
 
 /*
   Here's the breakdown of the top 10 most in-demand data engineer skills in 2023,
-  based on the top 10 and top 100 highest paying jobs for that role.
-  
-  NOTE: The limit clause in the top_paying_jobs CTE can be modified to reflect a larger data set.
-  
-  By Top 10 Jobs
-  - Python is the most frequently mentioned skill, appearing in 7 job postings. 
-  - Spark follows with 5 mentions.
-  - Hadoop, Kafka, and Scala each have 3 mentions.
-  - Pandas, Numpy, Pyspark, Kubernetes, SQL, Databricks each appear twice.
-  - Other skills like Go, Java, GCP (Google Cloud Platform), AWS (Amazon Web Services), NoSQL, PyTorch, Azure, R, Keras, TensorFlow, and Perl are mentioned once. 
-  
-  By Top 100 Jobs
+  based on the top 100 highest paying jobs for that role.
+    
   - Python is the most frequently mentioned skill, with 76 mentions.
   - SQL is a close second with 61 mentions.
   - Spark and AWS (Amazon Web Services) are also highly sought after, with 49 and 48 mentions, respectively. 
