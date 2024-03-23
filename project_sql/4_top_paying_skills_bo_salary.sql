@@ -1,7 +1,7 @@
 /*
  Goal: Identify the top skills based on salary.
  - Look at the average salary for each skill for data engineer positions.
- - Focus on roles with specified salaryies, regardless of location.
+ - Focus on roles with specified salaries, regardless of location.
  - Why? This reveals how posessing different skills affects salary levels for
  data engineers and helps identify the most well compensated skills to acquire or improve.
  */
