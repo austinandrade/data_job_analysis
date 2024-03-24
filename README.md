@@ -26,7 +26,7 @@ For my analysis, I utilized the power of 5 key tools:
 Each query for this project aimed to investigate specific aspects of the data engineer job market. Here's how I approached each question:
 
 ### 1. Top Paying Data Engineer Jobs
-First, I aimed to identify the highest-paying roles to understand the salary ceiling for senior data engineers. To accomplish this, I filtered data engineer positions by average yearly salary and location, focusing on remote jobs. This query highlights the highest-paying opportunities in the field.
+First, I aimed to identify the highest-paying roles to understand the salary ceiling for data engineer titles. To accomplish this, I filtered data engineer positions by average yearly salary and location, focusing on remote jobs. This query highlights the highest-paying opportunities in the field.
 
 ```sql
 SELECT job_id,
@@ -156,8 +156,23 @@ LIMIT 25
 
 - **Advanced Analytics and Infrastructure Management**: Skills like ggplot2, Kubernetes, and Splunk highlight the importance of advanced analytics, visualization, and infrastructure management. ggplot2's presence points to the value of data visualization skills in communicating insights, whereas Kubernetes and Splunk emphasize the need for expertise in managing containerized applications and analyzing large datasets, respectively. This trend signifies the role of data engineers not just in managing data, but also in extracting value from it and ensuring the robustness of the data infrastructure.
 
+| Skills | Average Salary ($)|
+|--------|-------------|
+| Assembly | 192,500          |
+| Mongo    | 182,223          |
+| Ggplot2  | 176,250          |
+| Rust    | 172,819          |
+| Clojure  | 170,867          |
+| Perl      | 169,000           |
+| Neo4j     | 166,559          |
+| Solidify   | 166,250          |
+| Graphql  | 162,547          |
+| Julia     | 160,500        |
+
+*Table of the average salary among the top 10 paying skills for data engineers*
+
 ### 5. Optimal Skills
-An optimal skill is both in high-demand as well as well compensated. This query provides insight into the most well-compensated data engineering roles alongside how frequently those roles appear across all data engineering positions. 
+An optimal skill is both in high-demand and well compensated. This query provides insight into the most well-compensated data engineering roles alongside how frequently those roles appear across all data engineering positions. 
 
 ```sql
 SELECT skills_dim.skill_id,
@@ -185,7 +200,43 @@ Here are insights into the most ideal roles based on the highest average salarie
 
 - **Foundational Programming and Cloud Platform Expertise**: Python and Java's enduring relevance, coupled with the high demand and compensation for AWS, Azure, and GCP skills, underline the critical role of core programming expertise and cloud platform knowledge in today’s data engineering landscape. Mastery in these areas is essential for building and managing sophisticated data infrastructure in a cloud-dominated ecosystem.
 
+| Skills | Demand Count | Average Salary ($) |
+|--------|-------------|-------| 
+| Kubernetes | 56          | 158,190
+| Kafka    | 134          | 150,549
+| Scala  | 113          | 141,777
+| Spark    | 237          | 139,838
+| Pyspark  | 64          | 139,428
+| Airflow      | 151           | 138,518
+| Java     | 139          | 138,087
+| Hadoop   | 98          | 137,707
+| NoSQL  | 93          | 136,430
+| Snowflake     | 202        | 134,373
+
+*Table of the most optimal skills for data engineers sorted by salary
+
 # What I learned
+
+Using SQL on real-world data to acquire personal insights has been invaluable in developing my understanding and use of SQL in practical applications.
+
+I've become comfortable:
+
+- **🧪 Crafting Complex Queries:** Merging multiple tables using multiple JOINS clauses and scoping data using WHERE clauses.
+- **➗ Aggregating Data** Using GROUP BY and aggregate functions such as COUNT() and AVG() to present data.
+- 💭 Translating real-world analytical asks into actionable, insightful SQL queries.
 
 # Conclusions
 
+1. **Core Skills and Cloud Mastery Are Essential**: The industry highly values foundational programming skills, particularly in Python and SQL, alongside expertise in major cloud platforms like AWS and Azure. This underscores the indispensable nature of core programming abilities and cloud proficiency in creating, managing, and scaling modern, efficient data infrastructures. Mastery in these areas enables data engineers to build sophisticated data processing pipelines and manage vast datasets effectively within cloud ecosystems.
+
+2. **High Demand for Big Data and Real-Time Processing Expertise**: Skills associated with big data technologies (e.g., Spark, Kafka) and cloud-native frameworks (e.g., Kubernetes, Docker) are crucial due to the industry's focus on scalable and real-time data processing capabilities. This trend reflects the shift towards leveraging advanced data storage and analytics solutions capable of efficiently handling large volumes of data in real time, highlighting the critical role of big data technologies in today's data-driven decision-making processes.
+
+3. **Versatility in Data Storage Technologies**: Proficiency in data storage solutions, from modern data warehousing technologies like Snowflake and Redshift to various NoSQL databases, is highly valued. This versatility signifies the growing complexity of data landscapes and the need for data engineers to navigate cloud-based and traditional data storage mechanisms effectively, ensuring flexibility and performance across diverse data types and workloads.
+
+4. **Premium on Niche Technologies and Advanced Analytics**: Emerging and specialized technologies command premium salaries, indicating lucrative opportunities in areas like blockchain development (e.g., Solidity), low-level programming (e.g., Assembly, Rust), and graph databases (e.g., Neo4j). Additionally, skills in advanced analytics and visualization (e.g., ggplot2) are essential, emphasizing the importance of managing data, extracting actionable insights, and ensuring effective communication through data visualization.
+
+5. **Shift Towards Comprehensive Data Infrastructure Management**: The industry's emphasis on tools for workflow management and sophisticated data processing (e.g., Airflow, Snowflake) alongside skills in infrastructure management (e.g., Kubernetes, Splunk) reflects a holistic approach to data engineering. This approach prioritizes not just the storage and processing of data but also the efficient management of data workflows and infrastructures, highlighting data engineers' evolving role in ensuring data ecosystems' robustness and reliability.
+
+### Closing Thoughts
+
+This project was an excellent way to practice and evolve my SQL skills and provided fantastic insight into the data engineer job market. What I've discovered through this analysis will serve as a valuable resource in my skill development and job search and hopefully serve other active or aspiring data engineers by helping them identify high-demand, high-paying skills. This work serves as a testament to the importance of continuous learning and adaptation to emerging trends in the field of data engineering.
